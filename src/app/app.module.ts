@@ -11,6 +11,9 @@ import { MainHomeComponent } from './component/main-home/main-home.component';
 import { HomeClientComponent } from './pages/client/home-client/home-client.component';
 import { ShopProductComponent } from './pages/client/shop-product/shop-product.component';
 
+// đây là module cung cấp các phương thức để component sử dụng gọi API
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { ShopProductComponent } from './pages/client/shop-product/shop-product.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
