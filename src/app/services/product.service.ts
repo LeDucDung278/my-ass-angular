@@ -14,4 +14,7 @@ export class ProductService {
   listProduct(): Observable<typeProduct[]> {
     return this.http.get<typeProduct[]>(environment.product)
   }
+  listOneProduct(id: string): Observable<typeProduct> {
+    return this.http.get<typeProduct>(`${environment.product}/${id}`)
+  }
 }

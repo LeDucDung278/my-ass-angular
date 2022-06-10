@@ -12,7 +12,8 @@ import { HomeClientComponent } from './pages/client/home-client/home-client.comp
 import { ShopProductComponent } from './pages/client/shop-product/shop-product.component';
 
 // đây là module cung cấp các phương thức để component sử dụng gọi API
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http'
     SliderCarouselComponent,
     MainHomeComponent,
     HomeClientComponent,
-    ShopProductComponent
+    ShopProductComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

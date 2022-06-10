@@ -2439,3 +2439,21 @@ textarea {
 .contact-info .social-networks ul li a:hover {
     color: #FE980F;
 }
+
+
+/* add product detail */
+.product__details__tab .product__details__tab__desc {
+	padding-top: 44px;
+}
+
+.product__details__tab .product__details__tab__desc h4 {
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 26px;
+    font-size: 16px;
+}
+
+.product__details__tab .product__details__tab__desc p {
+	color: #666666;
+    text-align: justify;
+}
