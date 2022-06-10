@@ -8,6 +8,8 @@ import { HeaderClientComponent } from './component/header-client/header-client.c
 import { FooterClientComponent } from './component/footer-client/footer-client.component';
 import { SliderCarouselComponent } from './component/slider-carousel/slider-carousel.component';
 import { MainHomeComponent } from './component/main-home/main-home.component';
+import { HomeClientComponent } from './pages/client/home-client/home-client.component';
+import { ShopProductComponent } from './pages/client/shop-product/shop-product.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MainHomeComponent } from './component/main-home/main-home.component';
     HeaderClientComponent,
     FooterClientComponent,
     SliderCarouselComponent,
-    MainHomeComponent
+    MainHomeComponent,
+    HomeClientComponent,
+    ShopProductComponent
   ],
   imports: [
     BrowserModule,
