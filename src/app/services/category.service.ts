@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { typeCategory } from '../types/Category';
+import { typeCategory, typeCateProduct } from '../types/Category';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +14,8 @@ export class CategoryService {
   // Kiểu dữ liệu Observale sẽ giúp lắng nghe API trả về kết quả
   listCategories(): Observable<typeCategory[]> {
     return this.http.get<typeCategory[]>(environment.category)
+  }
+  listOneCategory(id: string): Observable<typeCateProduct> {
+    return this.http.get<typeCateProduct>(`${environment.category}/${id}`)
   }
 }

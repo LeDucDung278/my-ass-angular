@@ -1,3 +1,4 @@
+import { ProductCategoryComponent } from './pages/client/product-category/product-category.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClientComponent } from './layouts/client/client.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'product/:id',
         component: ProductDetailComponent
+      },
+      {
+        path: 'category/:id',
+        component: ProductCategoryComponent
       }
     ]
   }

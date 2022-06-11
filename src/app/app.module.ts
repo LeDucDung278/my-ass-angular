@@ -13,7 +13,8 @@ import { ShopProductComponent } from './pages/client/shop-product/shop-product.c
 
 // đây là module cung cấp các phương thức để component sử dụng gọi API
 import { HttpClientModule } from '@angular/common/http';
-import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component'
+import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component';
+import { ProductCategoryComponent } from './pages/client/product-category/product-category.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProductDetailComponent } from './pages/client/product-detail/product-de
     MainHomeComponent,
     HomeClientComponent,
     ShopProductComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ProductCategoryComponent
   ],
   imports: [
     BrowserModule,
