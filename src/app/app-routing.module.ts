@@ -7,6 +7,7 @@ import { ProductDetailComponent } from './pages/client/product-detail/product-de
 import { ShopProductComponent } from './pages/client/shop-product/shop-product.component';
 import { LoginComponent } from './pages/client/auth/login/login.component';
 import { AdminComponent } from './layouts/admin/admin.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -36,7 +37,13 @@ const routes: Routes = [
     ]
   },{
     path: 'admin',
-    component: AdminComponent
+    component: AdminComponent,
+    children: [
+      {
+        path: '',
+        component: DashboardComponent
+      }
+    ]
   }
 ];
 

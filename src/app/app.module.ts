@@ -19,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component';
 import { ProductCategoryComponent } from './pages/client/product-category/product-category.component';
 import { LoginComponent } from './pages/client/auth/login/login.component';
-import { AdminComponent } from './layouts/admin/admin.component'
+import { AdminComponent } from './layouts/admin/admin.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AdminComponent } from './layouts/admin/admin.component'
     ProductDetailComponent,
     ProductCategoryComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
