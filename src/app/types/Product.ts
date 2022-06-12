@@ -7,3 +7,8 @@ export type typeProduct = {
     desc: string,
     status: number
 }
+export type ProductCart = {
+    _id: string,
+    name: string,
+    value: number
+}
