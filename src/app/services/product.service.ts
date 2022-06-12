@@ -17,4 +17,7 @@ export class ProductService {
   listOneProduct(id: string): Observable<typeProduct> {
     return this.http.get<typeProduct>(`${environment.product}/${id}`)
   }
+  deleteProduct (id: string): Observable<any> {
+    return this.http.delete(`${environment.product}/${id}`)
+  }
 }

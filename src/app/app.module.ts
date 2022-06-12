@@ -20,7 +20,9 @@ import { ProductDetailComponent } from './pages/client/product-detail/product-de
 import { ProductCategoryComponent } from './pages/client/product-category/product-category.component';
 import { LoginComponent } from './pages/client/auth/login/login.component';
 import { AdminComponent } from './layouts/admin/admin.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component'
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { TableComponent } from './component/product/table/table.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component'
     ProductCategoryComponent,
     LoginComponent,
     AdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

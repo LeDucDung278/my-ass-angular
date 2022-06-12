@@ -1,0 +1,50 @@
+<div id="content">
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Product List</h1>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Add Product</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Img</th>
+                                <th>Price</th>
+                                <th>Sale_Price</th>
+                                <th>Status</th>
+                                <th>Ation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let product of products">
+                                <td>{{product.name}}</td>
+                                <td>Customer Support</td>
+                                <td>{{product.price}}</td>
+                                <td>{{product.sale_price}}</td>
+                                <td>ON</td>
+                                <td>
+                                    <button class="btn btn-seccess">
+                                        <a [routerLink]="">Edit</a>
+                                    </button>
+                                    <button class="btn-btn-danger" (click)="onDelete(product._id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>

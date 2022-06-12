@@ -8,6 +8,7 @@ import { ShopProductComponent } from './pages/client/shop-product/shop-product.c
 import { LoginComponent } from './pages/client/auth/login/login.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { TableComponent } from './component/product/table/table.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
       {
         path: '',
         component: DashboardComponent
+      },
+      {
+        path: 'product',
+        component: TableComponent
       }
     ]
   }
