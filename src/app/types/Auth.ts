@@ -11,3 +11,10 @@ export type TypeLoginResponse ={
         role: number
     }
 }
+export type IUser ={
+    _id?: string,
+    name?: string,
+    email?:string,
+    password?: string,
+    role?: number
+} 
