@@ -6,6 +6,7 @@ import { HomeClientComponent } from './pages/client/home-client/home-client.comp
 import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component';
 import { ShopProductComponent } from './pages/client/shop-product/shop-product.component';
 import { LoginComponent } from './pages/client/auth/login/login.component';
+import { AdminComponent } from './layouts/admin/admin.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,9 @@ const routes: Routes = [
         component: LoginComponent
       }
     ]
+  },{
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

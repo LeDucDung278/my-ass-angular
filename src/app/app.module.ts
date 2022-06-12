@@ -18,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component';
 import { ProductCategoryComponent } from './pages/client/product-category/product-category.component';
-import { LoginComponent } from './pages/client/auth/login/login.component'
+import { LoginComponent } from './pages/client/auth/login/login.component';
+import { AdminComponent } from './layouts/admin/admin.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LoginComponent } from './pages/client/auth/login/login.component'
     ShopProductComponent,
     ProductDetailComponent,
     ProductCategoryComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
