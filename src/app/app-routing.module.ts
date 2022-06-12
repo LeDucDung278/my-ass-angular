@@ -9,6 +9,7 @@ import { LoginComponent } from './pages/client/auth/login/login.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { TableComponent } from './component/product/table/table.component';
+import { FormComponent } from './component/product/form/form.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,14 @@ const routes: Routes = [
       {
         path: 'product',
         component: TableComponent
+      },
+      {
+        path: 'product/create',
+        component: FormComponent
+      },
+      {
+        path: 'product/edit/:id',
+        component: FormComponent
       }
     ]
   }

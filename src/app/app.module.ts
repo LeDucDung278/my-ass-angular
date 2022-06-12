@@ -22,7 +22,8 @@ import { LoginComponent } from './pages/client/auth/login/login.component';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { TableComponent } from './component/product/table/table.component';
-
+import { FormComponent } from './component/product/form/form.component';
+import { ShowValidateComponent } from './show-validate/show-validate.component'
 
 @NgModule({
   declarations: [
@@ -40,6 +41,8 @@ import { TableComponent } from './component/product/table/table.component';
     AdminComponent,
     DashboardComponent,
     TableComponent,
+    FormComponent,
+    ShowValidateComponent
   ],
   imports: [
     BrowserModule,

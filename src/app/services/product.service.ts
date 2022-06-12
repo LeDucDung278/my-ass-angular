@@ -20,4 +20,10 @@ export class ProductService {
   deleteProduct (id: string): Observable<any> {
     return this.http.delete(`${environment.product}/${id}`)
   }
+  createProduct (data: typeProduct): Observable<typeProduct> {
+    return this.http.post<typeProduct>(`${environment.product}`,data)
+  }
+  editProduct (id:string ,data:typeProduct) : Observable<typeProduct> {
+    return this.http.put<typeProduct>(`${environment.product}/${id}`,data)
+  }
 }

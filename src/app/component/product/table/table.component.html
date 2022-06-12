@@ -33,7 +33,7 @@
                                 <td>ON</td>
                                 <td>
                                     <button class="btn btn-seccess">
-                                        <a [routerLink]="">Edit</a>
+                                        <a [routerLink]="['/admin','product','edit',product._id]">Edit</a>
                                     </button>
                                     <button class="btn-btn-danger" (click)="onDelete(product._id)">Delete</button>
                                 </td>
