@@ -5,6 +5,7 @@ import { ClientComponent } from './layouts/client/client.component';
 import { HomeClientComponent } from './pages/client/home-client/home-client.component';
 import { ProductDetailComponent } from './pages/client/product-detail/product-detail.component';
 import { ShopProductComponent } from './pages/client/shop-product/shop-product.component';
+import { LoginComponent } from './pages/client/auth/login/login.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'category/:id',
         component: ProductCategoryComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
     ]
   }
