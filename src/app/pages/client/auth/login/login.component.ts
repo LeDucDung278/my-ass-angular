@@ -10,13 +10,19 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent implements OnInit {
   LoginForm: FormGroup
+  SignupForm: FormGroup
   constructor(
     private authService: AuthService,
     private router: Router
   ) { 
     this.LoginForm = new FormGroup({
-      email: new FormControl('',Validators.email),
-      password: new FormControl('')
+      email: new FormControl('',Validators.email || Validators.required),
+      password: new FormControl('', Validators.required)
+    }),
+    this.SignupForm = new FormGroup({
+      name: new FormControl('',Validators.required),
+      email: new FormControl('',Validators.email || Validators.required),
+      password: new FormControl('',Validators.required)
     })
   }
 
@@ -33,6 +39,14 @@ export class LoginComponent implements OnInit {
       // dieu huong quay ve Admin
       this.router.navigateByUrl('/')
     })
+  }
+  onSubmitSignup() {
+    const submitData = this.SignupForm.value
+    console.log(submitData);
+    this.authService.signup(submitData).subscribe(data => {
+      this.router.navigateByUrl('/login')
+    })
+    
   }
 
 }

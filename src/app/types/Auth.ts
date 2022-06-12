@@ -1,3 +1,8 @@
+export type typeSignup = {
+    name: string,
+    email: string,
+    password: string
+}
 export type typeLogin = {
     email: string,
     password: string
