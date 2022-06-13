@@ -29,6 +29,7 @@ export class MainHomeComponent implements OnInit {
   GetListCategory() {
     this.categoryService.listCategories().subscribe((data)=>{
       this.categories = data
+      console.log(data)
     })
   }
 

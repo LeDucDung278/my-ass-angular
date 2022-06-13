@@ -10,5 +10,12 @@ export type typeProduct = {
 export type ProductCart = {
     _id: string,
     name: string,
-    value: number
+    value: number,
+}
+export type listCart = {
+    _id: string,
+    name:string,
+    price: number,
+    img: string,
+    value:number
 }

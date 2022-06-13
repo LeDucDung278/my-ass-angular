@@ -1,7 +1,7 @@
 import { typeProduct } from "./Product"
 
 export type typeCategory = {
-    id: string,
+    _id: string,
     name: string,
     status: number
 }
@@ -11,5 +11,5 @@ export type typeCateProduct = {
         name: string,
         status: number
     },
-    product: typeProduct
+    products: typeProduct[]
 }

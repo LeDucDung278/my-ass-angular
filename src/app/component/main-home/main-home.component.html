@@ -7,7 +7,7 @@
                     <div class="panel-group category-products" id="accordian"><!--category-productsr-->
                         <div *ngFor="let category of categories" class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">{{category.name}}</a></h4>
+                                <h4 class="panel-title"><a routerLink="/category/{{category._id}}">{{category.name}}</a></h4>
                             </div>
                         </div>
                     </div><!--/category-products-->

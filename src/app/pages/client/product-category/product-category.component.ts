@@ -22,15 +22,7 @@ export class ProductCategoryComponent implements OnInit {
         name: "",
         status: 0
     },
-    product: {
-      _id: "", 
-      name: "",
-      img: "",
-      price: 0,
-      sale_price: 0,
-      desc: "",
-      status: 0
-    }
+    products: []
     }
     this.categories = []
    }
@@ -44,7 +36,7 @@ export class ProductCategoryComponent implements OnInit {
     const idFromUrl = this.activateRoute.snapshot.params['id']
     this.categoryService.listOneCategory(idFromUrl).subscribe(data=>{
       this.productCategory = data
-      console.log(idFromUrl)
+      console.log(data)
     })
   }
 
