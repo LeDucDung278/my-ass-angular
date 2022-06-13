@@ -25,6 +25,10 @@ import { TableComponent } from './component/product/table/table.component';
 import { FormComponent } from './component/product/form/form.component';
 import { ShowValidateComponent } from './show-validate/show-validate.component'
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +53,9 @@ import { ShowValidateComponent } from './show-validate/show-validate.component'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

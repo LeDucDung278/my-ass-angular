@@ -3,6 +3,7 @@ import { ProductService } from 'src/app/services/product.service';
 import { ProductCart, typeProduct } from 'src/app/types/Product';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-product-detail',
@@ -16,7 +17,9 @@ export class ProductDetailComponent implements OnInit {
   constructor(
     private ProductService: ProductService, // dùng để lấy dữ liệu tham số trên URL
     private activateRoute: ActivatedRoute, // dùng để lấy các phương thức call API P
-    private lsService: LocalStorageService // dùng để lấy các phương thức xử lí LS
+    private lsService: LocalStorageService, // dùng để lấy các phương thức xử lí LS
+    private toastr: ToastrService
+
   ) {
     this.product = {
       _id: '', 
@@ -49,6 +52,7 @@ export class ProductDetailComponent implements OnInit {
     // nếu thực hiện như cũ, thì phía component header chứa cart sẽ không lắng nghe được
     // thực hiện gọi lại lsService để component cart có thể lắng nghe thay đổi
     this.lsService.setItems(addItem),
+    this.toastr.success('Sản phẩm đã được thêm vào giỏ hàng')
     this.cartItemValue =1
   }
 

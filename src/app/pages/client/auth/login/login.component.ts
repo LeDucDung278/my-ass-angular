@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,8 @@ export class LoginComponent implements OnInit {
   SignupForm: FormGroup
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private toastr: ToastrService
   ) { 
     this.LoginForm = new FormGroup({
       email: new FormControl('',Validators.email || Validators.required),
@@ -37,14 +39,20 @@ export class LoginComponent implements OnInit {
       // setItem(key luu trong LocalStorage, chuooi gia tri)
       localStorage.setItem('loggedInUser', JSON.stringify(data))
       // dieu huong quay ve Admin
-      this.router.navigateByUrl('/')
+      this.toastr.success("Đăng nhập thành công")
+      setTimeout(() => {
+        this.router.navigateByUrl('/')
+      }, 2000);
     })
   }
   onSubmitSignup() {
     const submitData = this.SignupForm.value
     console.log(submitData);
     this.authService.signup(submitData).subscribe(data => {
-      this.router.navigateByUrl('/login')
+      this.toastr.success("Đăng ký thành công")
+        setTimeout(()=>{
+          this.router.navigateByUrl('/login')
+        }, 2000)
     })
     
   }
