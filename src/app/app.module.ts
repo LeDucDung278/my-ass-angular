@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { TableCateComponent } from './component/category/table-cate/table-cate.component';
+import { CartPageComponent } from './pages/client/cart-page/cart-page.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { TableCateComponent } from './component/category/table-cate/table-cate.c
     TableComponent,
     FormComponent,
     ShowValidateComponent,
-    TableCateComponent
+    TableCateComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,
