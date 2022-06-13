@@ -18,4 +18,7 @@ export class CategoryService {
   listOneCategory(id: string): Observable<typeCateProduct> {
     return this.http.get<typeCateProduct>(`${environment.category}/${id}`)
   }
+  deleteCategory (id: string): Observable<any> {
+    return this.http.delete(`${environment.category}/${id}`)
+  }
 }

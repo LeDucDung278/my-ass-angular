@@ -28,6 +28,7 @@ import { ShowValidateComponent } from './show-validate/show-validate.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { TableCateComponent } from './component/category/table-cate/table-cate.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ToastrModule } from 'ngx-toastr';
     DashboardComponent,
     TableComponent,
     FormComponent,
-    ShowValidateComponent
+    ShowValidateComponent,
+    TableCateComponent
   ],
   imports: [
     BrowserModule,

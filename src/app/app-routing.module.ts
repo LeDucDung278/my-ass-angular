@@ -10,6 +10,7 @@ import { AdminComponent } from './layouts/admin/admin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { TableComponent } from './component/product/table/table.component';
 import { FormComponent } from './component/product/form/form.component';
+import { TableCateComponent } from './component/category/table-cate/table-cate.component';
 
 const routes: Routes = [
   {
@@ -56,7 +57,11 @@ const routes: Routes = [
       {
         path: 'product/edit/:id',
         component: FormComponent
-      }
+      },
+      {
+        path: 'category',
+        component: TableCateComponent
+      },
     ]
   }
 ];
