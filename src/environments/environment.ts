@@ -10,7 +10,8 @@ export const environment = {
   category: `${apiUrl}/category`,
   product: `${apiUrl}/product`,
   login: `${apiUrl}/signin`,
-  signup: `${apiUrl}/signup`
+  signup: `${apiUrl}/signup`,
+  users: `${apiUrl}/users`
 };
 
 /*

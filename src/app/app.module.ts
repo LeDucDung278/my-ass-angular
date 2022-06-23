@@ -30,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { TableCateComponent } from './component/category/table-cate/table-cate.component';
 import { CartPageComponent } from './pages/client/cart-page/cart-page.component';
+import { TableUserComponent } from './component/user/table-user/table-user.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { CartPageComponent } from './pages/client/cart-page/cart-page.component'
     FormComponent,
     ShowValidateComponent,
     TableCateComponent,
-    CartPageComponent
+    CartPageComponent,
+    TableUserComponent
   ],
   imports: [
     BrowserModule,

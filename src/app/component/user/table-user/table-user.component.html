@@ -1,0 +1,43 @@
+<div id="content">
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Product List</h1>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Ation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of users">
+                                <td>{{item.name}}</td>
+                                <td>{{item.email}}</td>
+                                <td>
+                                    <span *ngIf="item.role===0">User</span>
+                                    <span *ngIf="item.role===1">Admin</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" >Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>

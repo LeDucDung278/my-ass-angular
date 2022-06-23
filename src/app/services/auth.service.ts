@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { typeLogin, TypeLoginResponse, typeSignup } from '../types/Auth';
+import { IUser, typeLogin, TypeLoginResponse, typeSignup } from '../types/Auth';
 
 @Injectable({
   providedIn: 'root'
@@ -18,5 +18,8 @@ export class AuthService {
   }
   signup(data:typeSignup):  Observable<typeSignup> {
     return this.http.post<typeSignup>(environment.signup,data)
+  }
+  listUser(): Observable<IUser[]> {
+    return this.http.get<IUser[]>(environment.users)
   }
 }

@@ -12,6 +12,7 @@ import { TableComponent } from './component/product/table/table.component';
 import { FormComponent } from './component/product/form/form.component';
 import { TableCateComponent } from './component/category/table-cate/table-cate.component';
 import { CartPageComponent } from './pages/client/cart-page/cart-page.component';
+import { TableUserComponent } from './component/user/table-user/table-user.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
       {
         path: 'category',
         component: TableCateComponent
+      },
+      {
+        path: 'user',
+        component: TableUserComponent
       },
     ]
   }
