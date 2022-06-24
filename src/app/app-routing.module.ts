@@ -1,3 +1,4 @@
+import { CanAccessAdminGuard } from './guards/can-access-admin.guard';
 import { ProductCategoryComponent } from './pages/client/product-category/product-category.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -47,6 +48,7 @@ const routes: Routes = [
   },{
     path: 'admin',
     component: AdminComponent,
+    canActivate: [CanAccessAdminGuard], // Đưa vào để chặn nếu k login thì k vào admin được
     children: [
       {
         path: '',
@@ -78,6 +80,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [CanAccessAdminGuard] // Đưa vào để các route trên có thể sử dụng
 })
 export class AppRoutingModule { }
