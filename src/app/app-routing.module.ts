@@ -15,6 +15,7 @@ import { TableCateComponent } from './component/category/table-cate/table-cate.c
 import { CartPageComponent } from './pages/client/cart-page/cart-page.component';
 import { TableUserComponent } from './component/user/table-user/table-user.component';
 import { BlogComponent } from './pages/client/blog/blog.component';
+import { LoiComponent } from './pages/client/loi/loi.component';
 
 const routes: Routes = [
   {
@@ -50,7 +51,12 @@ const routes: Routes = [
         component: CartPageComponent
       }
     ]
-  },{
+  },
+  {
+    path: '404',
+    component: LoiComponent
+  },
+  {
     path: 'admin',
     component: AdminComponent,
     canActivate: [CanAccessAdminGuard], // Đưa vào để chặn nếu k login thì k vào admin được

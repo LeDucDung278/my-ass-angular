@@ -32,6 +32,7 @@ import { TableCateComponent } from './component/category/table-cate/table-cate.c
 import { CartPageComponent } from './pages/client/cart-page/cart-page.component';
 import { TableUserComponent } from './component/user/table-user/table-user.component';
 import { BlogComponent } from './pages/client/blog/blog.component';
+import { LoiComponent } from './pages/client/loi/loi.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { BlogComponent } from './pages/client/blog/blog.component';
     TableCateComponent,
     CartPageComponent,
     TableUserComponent,
-    BlogComponent
+    BlogComponent,
+    LoiComponent
   ],
   imports: [
     BrowserModule,
