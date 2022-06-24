@@ -31,6 +31,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { TableCateComponent } from './component/category/table-cate/table-cate.component';
 import { CartPageComponent } from './pages/client/cart-page/cart-page.component';
 import { TableUserComponent } from './component/user/table-user/table-user.component';
+import { BlogComponent } from './pages/client/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { TableUserComponent } from './component/user/table-user/table-user.compo
     ShowValidateComponent,
     TableCateComponent,
     CartPageComponent,
-    TableUserComponent
+    TableUserComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
